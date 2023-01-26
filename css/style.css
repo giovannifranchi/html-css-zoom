@@ -36,6 +36,10 @@ Common
     display: flex;
 }
 
+.img-fluid {
+    width: 100%;
+}
+
 /*
 ----------
 Header
@@ -46,6 +50,7 @@ header {
     padding: 5px;
     background-color: #000;
     justify-content: flex-end;
+    height: 40px;
 }
 
 header .header-item {
@@ -58,6 +63,41 @@ header .header-item {
     border-radius: 5px;
     gap: 5px;
 }
+
+/*
+----------
+Main
+----------
+*/
+
+main {
+    height: calc(100vh - 100px);
+    background-color: #000;
+    position: relative;
+}
+
+main .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.user-frame {
+    position: relative;
+    width: calc(100% / 7 - 10px);
+}
+
+.user-info {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 10px;
+}
+
+
+
 
 
 
